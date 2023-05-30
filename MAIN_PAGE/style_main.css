@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.button{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+    margin: 0;
+    position: absolute;
+    top:300vh;
+
+    align-items: center;
+    gap: 9rem;
+}
+.img{
+    background: url(car_tb.jpg) no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#link_1{
+    position: relative;
+    left: 67vh;
+    top: 80vh;
+}
+/* link1电池 */
+#link_2{
+    position: relative;
+    left: 30vh;
+    top: 40vh;
+}
+/* link2充电桩 */
+#link_3{
+    position: relative;
+    left: 150vh;
+    top: 10vh;
+}
+.link_p p{
+    margin-bottom: 2%;
+    font-size: 15px;
+    font-weight: bold;
+    font-style:normal;
+    color: rgb(184, 187, 189);
+}
+#link_p_1{
+    max-width: 100px;
+    position: relative;
+    left: 75vh;
+    top: 76vh;
+}
+#link_p_2{
+    max-width: 100px;
+    position: relative;
+    left: 22vh;
+    top: 36vh;
+}
+#link_p_3 {
+    max-width: 100px;
+    position: relative;
+    left: 158vh;
+    top: 5vh;
+}
+.pulse ion-icon{
+    font-size: 35px;
+    position: absolute;
+    padding: 7px;
+}
+.pulse{
+    width: 3rem;
+    color: #fff;
+    transition: all .5s ease;
+    background: #8e9091;
+}
+.pulse,.pulse::before,.pulse::after{
+    content: "";
+    display: grid;
+    grid-area: 1/1;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 #7b7d7e33;
+    animation: pulsing 3s linear infinite var(--s,0s);
+}
+.pulse::before{
+    --s:1s
+}
+.pulse::after{
+    --s:2s
+}
+.pulse:hover{
+    background: #7f828333;
+    color: #FFFFFF99;
+}
+
+@keyframes pulsing{
+to{
+    box-shadow: 0 0 0 6rem #0000;
+}
+}

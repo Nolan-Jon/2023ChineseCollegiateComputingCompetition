@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: #e7f6f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testimonial{
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.testimonial-text{
+    background: #2c3333;
+    color: #fff;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+.user-text{
+    width: 80%;
+    /* text-align: center; */
+    line-height: 30px;
+    position: absolute;
+    top:45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    transition: all 0.5s ease-in;
+}
+.user-text .fas{
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.user-text span{
+    display: block;
+    font-size: 13px;
+    margin-top: 70px;
+    font-weight: 500;
+}
+
+.testimonial-pic{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-pic{
+    width: 65px;
+    height: 65px;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+    background-size: auto;
+    background-position: center;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+.user-text.active-text{
+    display: block;
+    /* animation: moveup 0.5s linear forwards; */
+}
+
+.user-pic.active-pic{
+    width: 100px;
+    height: 100px;
+    border: 3px solid #2c3333;
+}
+@keyframes moveup {
+    0%{
+margin-top: 10%;
+    }
+    100%{
+margin-top: 0px;
+    }
+}

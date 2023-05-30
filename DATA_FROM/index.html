@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ad1c705c3a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>数据来源界面</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="testimonial">
+            <div class="testimonial-text">
+                <div class="user-text active-text">
+                    <i class="fas fa-quote-left"><p>能源危机页面数据来源</p></i>
+                    <p>•   石油产销量变化:BP统计2022年度报告</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <div class="user-text">
+                    <i class="fas fa-quote-left"><p>尾气排放页面数据来源</p></i>
+                    <p>•   国信证券:汽车汽配行业能源变革专题研究之二</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <div class="user-text">
+                    <i class="fas fa-quote-left"><p>新能源汽车电池数据来源</p></i>
+                    <p>•   左一:各厂商官网、汽车评测机构</p>
+                    <p>•   左二:国家统计局</p>
+                    <p>•   左三:SNE Research官网</p>
+                    <p>•   右一:中国公路学报:1-39</p>
+                    <p>•   右二:中国汽车工业协会</p>
+                    <p>•   右三:李克卿,陆文星,梁昌勇,管理视角下中国新能源汽车动力电池的回顾与展望</p>
+                </div>
+                <div class="user-text">
+                    <i class="fas fa-quote-left"><p>新能源汽车充电桩数据来源</p></i>
+                    <p>•   左一:中国充电联盟、中商产业研究院</p>
+                    <p>•   左二:中国充电联盟、中商产业研究院</p>
+                    <p>•   左三:中国充电联盟、中商产业研究院</p>
+                    <p>•   右一:中国充电联盟、中商产业研究院</p>
+                    <p>•   右二:《中国电动汽车充电基础设施现状及发展趋势》</p>
+                    <p>•   右三:头豹研究院《2022年中国汽车智能充电行业概览》</p>
+                </div>
+                <div class="user-text">
+                    <i class="fas fa-quote-left"><p>新能源汽车电机电控数据来源</p></i>
+                    <p>•   左一:盖世汽车、东吴证券研究所</p>
+                    <p>•   左二:智研咨询</p>
+                    <p>•   左三:智研咨询</p>
+                    <p>•   右一:行业趋势,2022年中国新能源汽车驱动电机行业现状及发展趋势分析</p>
+                    <p>•   右二:中商情报网,2023年中国汽车驱动电机装机量及竞争格局预测分析</p>
+                    <p>•   右三:智研咨询</p>
+                </div>
+                <div class="user-text">
+                    <i class="fas fa-quote-left"><p>新能源汽车保有量数据来源</p></i>
+                    <p>•   新华社、腾讯网、新浪科技、新浪财经、管车侠、亿利汽车知识网、全球新能源网</p>
+                    <p>•   新京报、中国商报网、中国能源报、钱江晚报、安徽网、泉州晚报、中国汽车报</p>
+                    <p>•   湖南省工业和信息化厅、成都日报、云南省公安厅交通警察总队</p>
+                    <p>•   西海都市报、内蒙古日报、中新网宁夏、上海发布</p>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="testimonial-pic">
+                <img src="./nengyuanweiji.png" class="user-pic active-pic" onclick="showReview()">
+                <img src="./oxid.png" class="user-pic" onclick="showReview()">
+                <img src="./battery.png" class="user-pic" onclick="showReview()">
+                <img src="./charge.png" class="user-pic" onclick="showReview()">
+                <img src="./dianji.png" class="user-pic" onclick="showReview()">
+                <img src="./carhave.png" class="user-pic" onclick="showReview()">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let userTexts=document.getElementsByClassName("user-text")
+        let userPics=document.getElementsByClassName("user-pic")
+function showReview(){
+    for(userPic of userPics){
+        userPic.classList.remove("active-pic")
+    }
+    for(userText of userTexts){
+        userText.classList.remove("active-text")
+    }
+    let i=Array.from(userPics).indexOf(event.target)
+    userPics[i].classList.add("active-pic")
+    userTexts[i].classList.add("active-text")
+}
+
+
+
+    </script>
+</body>
+
+</html>

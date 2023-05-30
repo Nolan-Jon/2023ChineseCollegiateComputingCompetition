@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style_home.css"/>
+    <!-- 如下是home-next-1的link -->
+    <link rel="stylesheet" href="../HOME_NEXT_1/style_next_1.css"/>
+    <link href="../HOME_NEXT_1/boxicons.min.css" rel="stylesheet"/>
+    <!-- 如下是home-next-2的link -->
+    <link rel="stylesheet" href="../HOME_NEXT_2/style_next_2.css"/>
+    <link href="../HOME_NEXT_2/boxicons.min.css" rel="stylesheet"/>
+    <!-- 如下是home-main的link和script -->
+    <link rel="stylesheet" href="../MAIN_PAGE/style_main.css">
+    <script type="module" src="../MAIN_PAGE/ionicons.esm.js"></script>
+    <script nomodule src="../MAIN_PAGE/ionicons.js"></script>
+    <!-- 如下是home-end的link -->
+    <!-- <link rel="stylesheet" href="../HOME_END/style_end.css" /> -->
+    <title>EcoDrive新能源</title>
+  </head>
+  <body>
+    <!-- home -->
+    <nav>
+      <div class="menu">
+        <div class="logo">
+          <a href="#">EcoDrive 电动未来</a>
+        </div>
+        <ul>
+          <li><a href="#">主页</a></li>
+          <li><a href="#home_id">能源危机</a></li>
+          <li><a href="#home_id1">尾气排放</a></li>
+          <li><a href="#main_id">三电一桩</a></li>
+          <!-- <li><a href="../HOME_END/index_end.html" target = "_blank" >相关新闻</a></li> -->
+        </ul>
+      </div>
+    </nav>
+    <div class="video-box">
+      <video class="video-background" preload="auto" loop playsinline
+        autoplay src="car_home_2.mp4" tabindex="-1" muted="muted"></video>
+    </div>
+    <div class="center">
+      <div class="title">电 动 未 来</div>
+      <div class="sub_title">新 能 源 汽 车 发 展 数 据 可 视 化</div>
+      <div class="btns">
+        <button type="submit" onclick="window.open('../HOME_END/index_end.html')">新闻政策</button>
+        <button>
+          <a href="#home_id">下滑</a>
+        </button>
+      </div>
+    </div>
+    <!-- home-next-1 -->
+    <!-- <header class="header">
+      <a class="logo">能 源 危 机</a>
+    </header> -->
+
+    <section class="home" id="home_id">
+      <div class="home-content">
+        <h3>能源危机</h3>
+        <h1>石油消耗增加</h1>
+        <h3>石油 <span class="multiple-text"></span></h3>
+        <p>汽车工业是当今世界最主要的工业部门之一</p>
+        <p>燃油车数量的增加，使得石油能源消耗逐年递增</p>
+        <p>新能源汽车的开发已成为今后一个重要的研究领域</p>
+        <a href="#home_id1" class="btn">下滑</a>
+      </div>
+      <div id="chart-container" style="width: 1200px;height:700px;"></div>
+    </section>
+    <script src="../HOME_NEXT_1/typed.umd.js"></script>
+    <script src="../HOME_NEXT_1/echarts.js"></script>
+    <script src="../HOME_NEXT_1/script_next_1.js"></script>
+
+    <!-- home-next-2 -->
+    <!-- <header class="header-1">
+      <a class="logo-1">环 境 污 染</a>
+    </header> -->
+
+    <section class="home-1" id="home_id1">
+      <div class="home-content-1">
+        <h3>二氧化碳</h3>
+        <h1>汽车尾气排放</h1>
+        <h3>环境 <span class="multiple-text-1"></span></h3>
+        <p>
+          汽车尾气的排放是环境污染的主要来源之一
+        </p>
+        <p>
+          汽车尾气中包含大量的有害气体和颗粒物
+        </p>
+        <p>
+          政府出台相关政策和法规，鼓励清洁能源汽车
+          
+        </p>
+        <p>减少汽车尾气的排放</p>
+        <a href="#main_id" class="btn-1">下滑</a>
+      </div>
+      <div class="home-chart-1" style="width: 1300px;height:700px;"></div>
+    </section>
+    <script src="../HOME_NEXT_2/echarts.js"></script>
+    <script src="../HOME_NEXT_2/typed.umd.js"></script>
+    <script src="../HOME_NEXT_2/script_next_2.js"></script>
+    <!-- home-main -->
+    <div class="img" id="main_id"></div>
+    <div class="button">
+      <a href="../VISION1/index.html" target = "_blank" class="pulse" id="link_1"> 
+        <ion-icon name="finger-print"></ion-icon><!--电池、新能源汽车-->
+      </a>
+      <div class="link_p" id="link_p_1"><p> 电池</p></div>
+      <a href="../VISION2/index.html" target = "_blank" class="pulse" id="link_2" style="filter: hue-rotate(120deg);">
+        <ion-icon name="ribbon"></ion-icon><!--充电桩-->
+      </a>
+      <div class="link_p" id="link_p_2"><p>充电桩 </p></div>
+      <a href="../VISION3/index.html" target = "_blank" class="pulse" id="link_3" style="filter: grayscale();">
+        <ion-icon name="finger-print"></ion-icon><!--电机、电控-->
+      </a>
+      <div class="link_p" id="link_p_3"><p> 电机电控</p></div>
+    </div>
+    <!-- home-end -->
+    <!-- <div class="container"   id="end_id">
+      <div class="row">
+        <div class="col">
+          <h1>新能源汽车</h1>
+          <p>
+            "零排放"、"高效节能"、"智能互联"
+          </p>
+          <p>习总书记说:新能源汽车是发展的必由之路！</p>
+          <p>在传统燃油汽车的生产和使用面临着越来越大的压力下，新能源汽车是未来汽车发展的趋势和方向。</p>
+          <p>让我们共同推动新能源汽车的高速发展，为全世界的环境改善和节能贡献一份自己的力量！</p>
+          <button type="submit" onclick="window.open('https://baike.baidu.com/item/%E6%96%B0%E8%83%BD%E6%BA%90/53368?lemmaFrom=lemma_starMap&fromModule=lemma_starMap')">新能源</button>
+        </div>
+        <div class="col">
+          <a href="http://www.gov.cn/zhengce/content/2020-11/02/content_5556716.htm" target = "_blank" class="card1 card">
+            <h5>国务院办公厅</h5>
+            <p>国务院办公厅关于印发新能源汽车产业发展规划通知</p>
+          </a>
+          <a href="https://www.qianzhan.com/analyst/detail/220/220930-53174b32.html" target = "_blank" class="card2 card">
+            <h5>专栏</h5>
+            <p>2022年中国及31省市新能源汽车行业政策汇总及解读</p>
+          </a>
+          <a href="http://www.gov.cn/zhengce/zhengceku/2022-09/26/content_5712586.htm" target = "_blank" class="card3 card">
+            <h5>财政部</h5>
+            <p>关于延续新能源汽车免征车辆购置税政策的公告</p>
+          </a>
+          <a href="http://xj.cnr.cn/2014xjfw/2014hy/201405/t20140527_515587283.shtml" target = "_blank" class="card4 card">
+            <h5>央广网</h5>
+            <p>习近平:新能源汽车是汽车强国的必由之路</p>
+          </a>
+        </div>
+      </div>
+    </div> -->
+  </body>
+</html>
